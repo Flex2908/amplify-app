@@ -46,6 +46,7 @@ class NotesList extends Component {
           <div key={note.id} style={styles.note}>
             <p>{note.text}</p>
             <p>{note.createdAt}</p>
+            <p>{note.temp_outside}</p>           
             <button onClick={() => { this.props.deleteNote(note) }} style={styles.deleteButton}>x</button>
           </div>
         )}
