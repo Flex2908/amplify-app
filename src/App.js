@@ -42,9 +42,7 @@ class NotesList extends Component {
   render() {
     return (
       <div>
-        {this.props.notes.map(note =>
-          <div key={note.id} style={styles.note}>
-            <table>
+           <table>
             <tr>
               <th></th>
               <th>Temperatur</th>
@@ -56,6 +54,10 @@ class NotesList extends Component {
                <th>Raum</th>
                <th>Außen</th>
             </tr>
+          </table>
+        {this.props.notes.map(note =>
+          <div key={note.id} style={styles.note}>
+            <table>
             <tr>
                <td><p>{note.zeitstempel}</p></td>
                <td><p>{note.temp_vorlauf}</p></td>
@@ -100,7 +102,7 @@ class App extends Component {
   render() {
     return (
       <div style={styles.container}>
-        <h1>Notes App</h1>
+        <h1>Heizungswerte Freiherr-vom-Stein-Straße 16</h1>
         <AddNote addNote={this.addNote} />
         <NotesList notes={this.state.notes} deleteNote={this.deleteNote} />
         <AmplifySignOut />
