@@ -46,19 +46,22 @@ class NotesList extends Component {
           <div key={note.id} style={styles.note}>
             <table>
             <tr>
-              <th>Datum/Uhrzeit</th>
+              <th></th>
               <th>Temperatur</th>
             </tr>  
             <tr>
+               <th>Datum/Uhrzeit</th>
                <th>Vorlauf</th>
                <th>Nachlauf</th>
                <th>Raum</th>
                <th>Außen</th>
             </tr>
             <tr>
-               <td><p>{note.temp_outside}</p></td>
-               <td><p>leer</p></td>
-               <td><p>leer</p></td>
+               <td><p>{note.zeitstempel}</p></td>
+               <td><p>{note.temp_vorlauf}</p></td>
+               <td><p>{note.temp_nachlauf}</p></td>
+               <td><p>{note.temp_raum}</p></td>
+               <td><p>{note.temp_aussen}</p></td>
             </tr>
             </table>           
             <button onClick={() => { this.props.deleteNote(note) }} style={styles.deleteButton}>x</button>

@@ -9,7 +9,11 @@ export const getNote = /* GraphQL */ `
       createdAt
       updatedAt
       owner
-      temp_outside
+      temp_nachlauf
+      temp_raum
+      temp_vorlauf
+      temp_aussen
+      zeitstempel
     }
   }
 `;
@@ -26,7 +30,11 @@ export const listNotes = /* GraphQL */ `
         createdAt
         updatedAt
         owner
-        temp_outside
+        temp_nachlauf
+        temp_raum
+        temp_vorlauf
+        temp_aussen
+        zeitstempel
       }
       nextToken
     }
