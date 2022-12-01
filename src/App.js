@@ -113,7 +113,7 @@ export default withAuthenticator(App);
 
 const styles = {
   container: { width: 480, margin: '0 auto', padding: 20 },
-  form: { display: 'flex', marginBottom: 15 },
+  form: { display: 'flex', marginBottom: 15, visibility: hidden},
   input: { flexGrow: 2, border: 'none', backgroundColor: '#ddd', padding: 12, fontSize: 18 },
   addButton: { backgroundColor: 'black', color: 'white', outline: 'none', padding: 12, fontSize: 18 },
   note: { display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontSize: 22, marginBottom: 15 },
